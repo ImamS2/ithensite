@@ -23,7 +23,7 @@ SetEnvIf Host ithensite.app-ithenticate.com$ CI_ENV=testing
 SetEnvIf Host localhost$ CI_ENV=development
 
 RewriteCond %{HTTPS} on
-RewriteRule ^(.*)$ https://%{HOST_NAME}%{REQUEST_URI}[R=301]
+RewriteRule ^(.*)$ https://ithentisite.app-ithenticate.com%{REQUEST_URI}[L=301]
 
 RewriteCond $1 !^(index\.php|images|assets|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
