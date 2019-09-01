@@ -53,5 +53,7 @@ $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route["en_us/login"] = "auth/login";
-$route["en_us/logout"] = "auth/logout";
+$route["en_us/login"] = "Auth/login";
+$route["en_us/logout"] = "Auth/logout";
+
+$route["en_us/(.+)$"] = "$1";
